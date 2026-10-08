@@ -2621,8 +2621,8 @@ DOCUMENTATION
 	- Fast Malloc
 	- STEP Conversion
 	- GCV
-	- Solid Modeling
-	- Representation Methodology / Sensitivity
+	- Solid Modeling / Representation Methodology
+	  (Completed: doc/asciidoc/articles/solid_geometry_comparison.adoc)
 	- NURBS Ray Tracing
 
 * BRL-CAD Commands Quick Reference
