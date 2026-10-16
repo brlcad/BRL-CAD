@@ -46,6 +46,13 @@ forces _use_air_ on at startup so that air regions appear in the partition
 lists.  The grid is aligned on one-inch (25.4mm) boundaries by default, or
 on *-g*/*-G* cell boundaries when those are given.
 
+Shots are not centered within their grid cells.  As in the rest of the
+*rt*(1) family, each ray is fired from the lower left corner of its cell,
+half a cell width and height away from the cell center that GIFT expects.
+To accommodate both, each shotline header records the h, v coordinates of
+the grid cell center followed by the actual h, v coordinates the ray was
+fired from.
+
 *rtg3* is a front end to *librt*(3) and shares its option parser with the
 rest of the *rt*(1) family; the most commonly used options are listed
 below.
